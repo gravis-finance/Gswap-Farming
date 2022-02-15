@@ -157,43 +157,6 @@ All files                |    98.71 |    96.62 |    95.65 |    98.68 |          
 -------------------------|----------|----------|----------|----------|----------------|
 ```
 
-#### Deploy GravisToken
-
-```
-yarn deploy --network bsctest --tags Token
-
-yarn verify --network bsctest 0x...
-yarn verify --network bsctest 0xd4153e00ee1290B2d5F1580A0f18777d4000413B
-```
-
-```
-yarn deploy --network bsc --tags Token
-
-yarn verify --network bsc 0x8E88f4f82F0bb15f8c53a2261B7b84606ca6D375
-```
-
-#### Deploy GravisMaster
-
-```
-yarn deploy --network bsctest --tags Master
-
-yarn verify --network bsctest 0x... --constructor-args src/002_arguments.js
-yarn verify --network bsctest 0x25dBEEad8A106deD522831E11bEf339141D9aa94 --constructor-args src/002_arguments.js
-```
-
-```
-yarn deploy --network bsc --tags Master
-
-yarn verify --network bsc 0x6aF334B742d51799F600992f967d2edBbAFeCCE6 --constructor-args src/002_arguments.js
-```
-
-#### Deploy GravisTokenX
-
-```
-yarn deploy --network bsctest --tags GRVX
-
-yarn verify --network bsctest 0x0eb3578904eEc144a2DAf123a856EE8018124fc7
-```
 
 #### Deploy GravisChef
 
@@ -201,20 +164,4 @@ yarn verify --network bsctest 0x0eb3578904eEc144a2DAf123a856EE8018124fc7
 yarn deploy --network bsctest --tags Chef
 
 yarn verify --network bsctest 0xC1A265f839d7f48c905fB19533043E97D9c54d7b --constructor-args src/004_arguments.js
-```
-
-#### Deploy AsteroidFarmingMutator
-
-```
-yarn deploy --network bsctest --tags Mutator
-
-yarn verify --network bsctest 0x0 --constructor-args src/005_arguments.js
-```
-
-#### Deploy AsteroidFarmingMutatorVRF
-
-```
-yarn deploy --network bsctest --tags MutatorVRF
-
-yarn verify --network bsctest 0x0 --constructor-args src/006_arguments.js
 ```
